@@ -1,0 +1,24 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int num_laranjas;
+    double preco_unitario, preco_total;
+
+    cin >> num_laranjas;
+
+    if (num_laranjas >= 12) {
+        preco_unitario = 0.65;
+    } else {
+        preco_unitario = 0.80;
+    }
+
+    preco_total = num_laranjas * preco_unitario;
+
+    cout << fixed << setprecision(2); // Limitando para 2 casas decimais
+    cout << "Preco da unidade: R$" << preco_unitario << endl;
+    cout << "Preco total: R$" << preco_total << endl;
+
+    return 0;
+}
