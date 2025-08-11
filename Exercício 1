@@ -16,7 +16,7 @@ int main() {
 
     preco_total = num_laranjas * preco_unitario;
 
-    cout << fixed << setprecision(2); // Limitando para 2 casas decimais
+    cout << fixed << setprecision(2);
     cout << "Preco da unidade: R$" << preco_unitario << endl;
     cout << "Preco total: R$" << preco_total << endl;
 
